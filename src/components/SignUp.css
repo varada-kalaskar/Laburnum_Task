@@ -1,0 +1,107 @@
+.form-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+  }
+  
+  .login {
+    text-align: center;
+    overflow-y: hidden;
+  }
+  #loginbg {
+    height: 80vh;
+  }
+  
+  .logincard {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 32vw;
+    background-image: linear-gradient(to top right,#a5a1a1 0%,#a5a1a1 100%);
+    box-shadow: 0 1px 8px 0 rgba(247, 236, 236, 0.16),
+      0 6rgb (80, 94, 110) 0 rgba(247, 236, 236, 0.16);
+  }
+  .logintitle {
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+    color: #000000;
+    font-size: 5.5vh;
+  }
+  input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-color: #000000;
+    background-color:#a5a1a1;
+    outline: none;
+    color: #ffffff;
+  }
+  input:focus {
+    outline: none;
+    border-bottom-color: #ffffff;
+    transition: 1s;
+  }
+  ::placeholder {
+    color: #000000;
+    font-size: 2.8vh;
+  }
+  .formField {
+    margin-top: 4vh;
+  }
+  
+  .formip {
+    width: 20vw;
+  }
+  .birthday{
+    width: 12.2vw;
+  }
+  .loginbutton {
+    margin-top: 5vh;
+    width: 10vw;
+    outline: none;
+    margin-bottom: 3vh;
+  }
+  
+  
+  .loginbutton:active {
+    border: 3px solid #000000;
+    color: #fff;
+    transform: scale(0.9);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24)!important;
+    -webkit-box-shadow: none!important;
+  }
+  
+  
+  .scanfcode {
+    background: transparent;
+    background-image: linear-gradient(to top right, #000000 0%,#000000  100%);
+    color: white;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  
+  .scanfcode:after {
+    content: '';
+      display: block;
+      position: absolute;
+      top: -36px;
+      left: -100px;
+      background: white;
+      width: 50px;
+      height: 125px;
+      opacity: 20%;
+      transform: rotate(-45deg);
+  }
+  
+  .scanfcode:hover:after {
+    left: 130%;
+    transition: all 600ms cubic-bezier(0.3, 1, 0.2, 1);
+     -webkit-transition: all 600ms cubic-bezier(0.3, 1, 0.2, 1);
+  }
+  
